@@ -1,9 +1,10 @@
 // * ES6 module
-import { getPosts } from "./postController.js";
+import getPosts, {getPostsLen} from "./postController.js";
 
 const myPosts = getPosts();
 
 console.log(myPosts[0].title);
+console.log(`myPosts length is : ${getPostsLen()}`);
 
 
 // * commonJS Module
